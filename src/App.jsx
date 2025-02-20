@@ -55,6 +55,7 @@ export default function App() {
     // Conditionals to not allow clicks on filled boxes and not allow clicks on boxes with no values below them (floating)
     if (moves[index]) return;
     if (index > 9 && moves[index - 10] === null) return;
+    if (hasWinner) return;
 
     const newMoves = [...moves];
     newMoves[index] = playerTurn;
