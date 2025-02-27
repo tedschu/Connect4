@@ -37,7 +37,7 @@ export default function App() {
   const [winningLineArray, setWinningLineArray] = useState([]);
 
   const winningLines = [
-    [10, 20, 30],
+     [10, 20, 30],
     [11, 22, 33],
     [1, 2, 3],
     [-9, -18, -27],
@@ -45,6 +45,12 @@ export default function App() {
     [-11, -22, -33],
     [-1, -2, -3],
     [9, 18, 27],
+    [-1, 1, 2],
+    [-2, -1, 1],
+    [9, 18, -9],
+    [9, -9, -18],
+    [11, 22, -11],
+    [11, -11, -22],
   ];
 
   function handleClick(index) {
